@@ -20,6 +20,12 @@ class Patient(BaseModel):
         
         return value
     
+    @field_validator('name')
+    @classmethod
+    def transform_name(cls,value):
+         name= value[0].upper()+ value[1:]
+         return name
+    
     def show_detail(self):
         print(f"Name:{self.name}")
         print(f"Email: {self.email}")

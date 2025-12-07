@@ -36,6 +36,6 @@ class Patient(BaseModel):
         print(f"Allergies: {self.allergies}")
         print(f"Contact: {self.contact_Details}")
         
-patient_info={'name':'nitish', 'email':'abc@hdfc.com','age':'65','weight':75.3,'height':12,'married':'True','allergies':['pollen','dust'],'contact_Details':{'phone':'987654321','emergency':'893535214'}}
+patient_info={'name':'nitish', 'email':'abc@hdfc.com','age':'65','weight':75.3,'height':1.2,'married':'True','allergies':['pollen','dust'],'contact_Details':{'phone':'987654321','emergency':'893535214'}}
 patient1=Patient(**patient_info)
 patient1.show_detail()
